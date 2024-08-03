@@ -1,0 +1,88 @@
+.main-header {
+    background-color: #607d8b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-header nav {
+    flex: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    max-width: 980px;
+}
+
+.main-header nav::-webkit-scrollbar {
+    display: none;
+}
+
+.link-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.link-list li {
+    margin: 0 15px;
+}
+
+.link-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 3px;
+    display: inline-flex;
+}
+
+.link-list li a:hover {
+    text-decoration: underline;
+}
+
+.link-list li a.active {
+    font-weight: bold;
+    color: darkslategray;
+    background: white;
+    border-radius: 4px;
+    padding: 3px;
+    display: inline-flex;
+}
+
+.scroll-button {
+    background-color: #607d8b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-button.left {
+    left: 0px;
+    margin: 0;
+}
+
+.scroll-button.right {
+    right: 22px;
+    margin: 0;
+}
+
+.scroll-button:hover {
+    background-color: #455a64;
+}
+
+body {
+    padding-top: 70px;
+}
